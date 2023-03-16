@@ -7,7 +7,8 @@ from prefect_gcp.cloud_storage import GcsBucket
 
 
 credentials_block = GcpCredentials(
-    service_account_file="/home/bartoszsklodowski/gcloud_keys/de-zoomcamp-project-.json"  # enter your credentials info or use the file method.
+    # enter your credentials info or use the file method.
+    service_account_file="/home/bartoszsklodowski/gcloud_keys/de-zoomcamp-project-.json"  
 )
 credentials_block.save("zoom-gcp-creds", overwrite=True)
 
