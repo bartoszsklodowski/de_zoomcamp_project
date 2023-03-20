@@ -25,11 +25,12 @@ def transform(path: Path) -> pd.DataFrame:
     - Delete rows with Nan values
     """
     df = pd.read_parquet(path)
-    cols_to_drop = ["Crime ID", "LSOA code", "Context", "Falls within"]
+    cols_to_drop = ["LSOA code", "Context", "Falls within"]
     df.drop(cols_to_drop, axis=1, inplace=True)
     clean_df = df.dropna()
     final_df = clean_df.rename(
         columns={
+            "Crime ID": "Crime_ID",
             "Reported by": "Reported_by",
             "LSOA name": "LSOA_name",
             "Crime type": "Crime_type",
