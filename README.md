@@ -130,7 +130,6 @@ dbt build
 
 Now you can build your own reports using Looker studio or look at [mine](https://lookerstudio.google.com/reporting/cd17fc94-38e8-41f8-a5fc-c38ce8a34c18)
 
-<iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/cd17fc94-38e8-41f8-a5fc-c38ce8a34c18/page/0HPJD" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 ## Author
 
