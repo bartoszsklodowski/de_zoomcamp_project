@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+    - name: staging
+      database: de-zoomcamp-project-380514
+      schema: uk_crimes_data
+
+      tables:
+        - name: uk_crimes_data_all
+
+
+models:
+    - name: stg_uk_crimes
+      description: >
+         Individual crime and anti-social behaviour (ASB) incidents, 
+         including street-level location information and subsequent police and 
+         court outcomes associated with the crime.
+      columns:
+          - name: crimeid
+            description: Primary key for this table, generated with a month
+            tests:
+                - unique:
+                    severity: warn
+                - not_null:
+                    severity: warn
+          - name: date 
+            description: >
+                The date in which the crime was committed. Due to the absence of a day in the date, 
+                the first day of the month has been assigned to each.
+          - name: reported_by 
+            description: The entity that reported the crime.
+          - name: longitude 
+            description: The street-level location of the crime incident.
+          - name: latitude 
+            description: The street-level location of the crime incident.
+          - name: location 
+            description: Description of the venue including streets.
+          - name: lsoa_name
+            description: A geographic hierarchy designed to improve the reporting of small area statistics in England and Wales.
+          - name: crime_type 
+            description: The type of crime.
+          - name: last_outcome_category 
+            description: A reference to whichever of the outcomes associated with the crime occurred most recently.
+          
