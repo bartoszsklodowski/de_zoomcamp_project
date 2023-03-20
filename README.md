@@ -1,4 +1,4 @@
-# Project of a neural network predicting prices of the S&P 500 stock index
+# Data Engineering Zoomcamp Project
 
 The aim of the project was to create a data engineering project that would cover the [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) course with its scope and technologies. This is the final project concerning this course. This project is about the [uk_crimes_2023](https://www.kaggle.com/datasets/marshuu/crimes-in-uk-2023?resource=download&select=2023-01-northamptonshire-street.csv) dataset, which represents crime data in the UK in January 2023. The project is based on batch processing.
 
