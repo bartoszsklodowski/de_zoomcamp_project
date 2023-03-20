@@ -1,0 +1,11 @@
+# Fill in with your project informations
+my-bigquery-db:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: de-zoomcamp-project-380514
+      dataset: uk_crimes
+      threads: 1
+      keyfile: /home/bartoszsklodowski/gcloud_keys/de-zoomcamp-project-.json
