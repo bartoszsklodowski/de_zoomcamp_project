@@ -1,0 +1,6 @@
+version: 2
+
+seeds: 
+  - name: lsoa_names_codes
+    description: >
+      Lower layer Super Output Areas (December 2021) Names and Codes in England and Wales
